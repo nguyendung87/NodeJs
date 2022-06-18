@@ -27,9 +27,9 @@ mongoose.connection.on('error', function (err) {
     console.log(err);
    });
 
-app.use("/v1/author", authorRouter);
+app.use("api/v1/author", authorRouter);
 
-app.use("/v1/book", bookRouter);
+app.use("api/v1/book", bookRouter);
 
 app.listen(6000,() => {
     console.log("Server is running...");
